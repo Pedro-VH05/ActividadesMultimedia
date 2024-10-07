@@ -1,6 +1,5 @@
   import 'package:actividad1/Screens/NombrePantalla.dart';
   import 'package:flutter/material.dart';
-  import 'package:actividad1/Screens/RepoPantalla.dart';
   import 'package:actividad1/Screens/FotosPantalla.dart';
   import 'package:actividad1/Screens/FotosColumna.dart';
   import 'package:actividad1/Screens/IconosPantalla.dart';

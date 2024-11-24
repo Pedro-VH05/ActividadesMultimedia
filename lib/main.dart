@@ -1,101 +1,79 @@
-  import 'package:actividad1/Screens/NombrePantalla.dart';
-  import 'package:flutter/material.dart';
-  import 'package:actividad1/Screens/FotosPantalla.dart';
-  import 'package:actividad1/Screens/FotosColumna.dart';
-  import 'package:actividad1/Screens/IconosPantalla.dart';
+import 'package:actividad4/Screens/menu_lateral.dart';
+import 'package:flutter/material.dart';
 
-  void main() {
-    runApp(MyApp());
-  }
+void main() {
+  runApp(const MyApp());
+}
 
-  class MyApp extends StatelessWidget {
-    @override
-    Widget build(BuildContext context) {
-      return MaterialApp(
-        title: 'Drawer Navegable',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: MyHomePage(),
-      );
-    }
-  }
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-  class MyHomePage extends StatelessWidget {
-    @override
-    Widget build(BuildContext context) {
-      return Scaffold(
-        appBar: AppBar(
-          title: Text('Drawer Navegable'),
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Drawer Navegable',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        // Colores
+        primarySwatch: Colors.blue,
+        appBarTheme: const AppBarTheme(
           backgroundColor: Color(0xFF76e9ff),
+          titleTextStyle: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            color: Colors.black,
+          ),
         ),
-        drawer: Drawer(
+        scaffoldBackgroundColor: const Color(0xFFdaffff),
+        drawerTheme: const DrawerThemeData(
           backgroundColor: Color(0xFFdaffff),
-          child: ListView(
-            padding: EdgeInsets.zero,
-            children: <Widget>[
-              const DrawerHeader(
-                decoration: BoxDecoration(
-                  color: Color(0xFF76e9ff),
-                ),
-                child: Text(
-                  'Menú de Navegación',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 24,
-                    height: 10,
-                  ),
-                ),
-              ),
-              ListTile(
-                leading: const Icon(Icons.person),
-                title: const Text('Nombre y Apellidos'),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => NombrePantalla()),
-                  );
-                },
-              ),
-              ListTile(
-                leading: const Icon(Icons.photo),
-                title: const Text('Fotos en Fila'),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => FotosPantalla()),
-                  );
-                },
-              ),
-              ListTile(
-                leading: const Icon(Icons.photo_library),
-                title: const Text('Fotos en Columna'),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => FotosColumna()),
-                  );
-                },
-              ),
-              ListTile(
-                leading: Icon(Icons.star),
-                title: Text('Iconos'),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => IconosPantalla()),
-                  );
-                },
-              ),
-            ],
+        ),
+        // Estilos de texto
+        textTheme: const TextTheme(
+          bodyMedium: TextStyle(
+            fontSize: 16,
+            color: Colors.black,
+          ),
+          titleLarge: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            color: Colors.black,
           ),
         ),
-        backgroundColor: Color(0xFFdaffff),
-        body: const Center(
-          child: Text(
-            'Selecciona una opción del menú.',
-          ),
+        // Estilo para los ListTile en el Drawer
+        listTileTheme: const ListTileThemeData(
+          tileColor: Color(0xFFdaffff), // Fondo de los ListTiles
+          selectedTileColor: Color(0xFF76e9ff), // Color cuando se selecciona
+          textColor: Colors.black,
+          iconColor: Colors.black,
         ),
-      );
-    }
+        // Botones
+        buttonTheme: const ButtonThemeData(
+          buttonColor: Color(0xFF76e9ff), // Color de los botones
+          textTheme: ButtonTextTheme.primary,
+        ),
+      ),
+      home: const MyHomePage(),
+    );
   }
+}
+
+class MyHomePage extends StatelessWidget {
+  const MyHomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Drawer Navegable'),
+        backgroundColor: const Color(0xFF76e9ff),
+      ),
+      drawer: const MenuLateral(),
+      body: const Center(
+        child: Text(
+          'Selecciona una opción del menú.',
+        ),
+      ),
+    );
+  }
+}

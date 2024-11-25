@@ -1,9 +1,9 @@
-import 'package:actividad4/Screens/instagram/feed.dart';
-import 'package:actividad4/Screens/instagram/footer.dart';
-import 'package:actividad4/Screens/instagram/header.dart';
-import 'package:actividad4/Screens/instagram/profile.dart';
-import 'package:actividad4/Screens/instagram/stories.dart';
-import 'package:actividad4/main.dart';
+import 'package:actividad4/screens/instagram/feed.dart';
+import 'package:actividad4/screens/instagram/footer.dart';
+import 'package:actividad4/screens/instagram/header.dart';
+import 'package:actividad4/screens/instagram/profile.dart';
+import 'package:actividad4/screens/instagram/stories.dart';
+import 'package:actividad4/screens/menu_lateral.dart';
 import 'package:flutter/material.dart';
 
 class InstagramApp extends StatelessWidget {
@@ -21,19 +21,11 @@ class InstagramPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const MenuLateral(),
       appBar: AppBar(
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () {
-            Navigator.pushAndRemoveUntil(
-              context,
-              MaterialPageRoute(builder: (context) => const MyApp()),
-              (route) => false,
-            );
-          },
-        ),
         title: const Text('pedro.vh05'),
       ),
+      backgroundColor: Colors.white,
       body: ListView(
           children: const [
             ProfileHeader(),

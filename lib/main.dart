@@ -1,4 +1,5 @@
-import 'package:actividad4/Screens/menu_lateral.dart';
+import 'package:actividad4/routes/app_routes.dart';
+import 'package:actividad4/screens/menu_lateral.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -53,6 +54,8 @@ class MyApp extends StatelessWidget {
           textTheme: ButtonTextTheme.primary,
         ),
       ),
+      initialRoute: '/', // Establece la ruta inicial
+      routes: AppRoutes.routes, // Vincula las rutas definidas en AppRoutes
       home: const MyHomePage(),
     );
   }

@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:math';
+import 'package:actividad4/screens/menu_lateral.dart';
 import 'package:flutter/material.dart';
 
 class JuegoImagenes extends StatefulWidget {
@@ -71,6 +72,7 @@ class _JuegoImagenesState extends State<JuegoImagenes> {
       appBar: AppBar(
         title: const Text('Juego de Imágenes'),
       ),
+      drawer: const MenuLateral(),
       body: Stack(
         children: [
           if (imagenVisible)

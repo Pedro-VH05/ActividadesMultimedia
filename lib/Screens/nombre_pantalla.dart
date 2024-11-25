@@ -1,3 +1,4 @@
+import 'package:actividad4/screens/menu_lateral.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -11,6 +12,7 @@ class NombrePantalla extends StatelessWidget {
         title: const Text('Nombre y Apellidos'),
         backgroundColor: const Color(0xFF76e9ff),
       ),
+      drawer: const MenuLateral(),
       backgroundColor: const Color(0xFFdaffff),
       body: Center(
         child: Column(

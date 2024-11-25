@@ -1,3 +1,4 @@
+import 'package:actividad4/screens/menu_lateral.dart';
 import 'package:flutter/material.dart';
 
 class FotosColumna extends StatelessWidget {
@@ -11,6 +12,7 @@ class FotosColumna extends StatelessWidget {
         backgroundColor: const Color(0xFF76e9ff),
       ),
       backgroundColor: const Color(0xFFdaffff),
+      drawer: const MenuLateral(),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [

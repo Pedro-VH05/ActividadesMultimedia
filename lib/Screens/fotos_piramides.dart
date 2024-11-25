@@ -1,3 +1,4 @@
+import 'package:actividad4/screens/menu_lateral.dart';
 import 'package:flutter/material.dart';
 
 class PiramideScreen extends StatelessWidget {
@@ -9,6 +10,7 @@ class PiramideScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Pirámide de Imágenes"),
       ),
+      drawer: const MenuLateral(),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -23,6 +25,7 @@ class PiramideScreen extends StatelessWidget {
                     width: 100,
                     height: 100,
                   ),
+                  const Text('John Pork'),
                 ],
               ),
             ],
@@ -40,6 +43,7 @@ class PiramideScreen extends StatelessWidget {
                     width: 100,
                     height: 100,
                   ),
+                  const Text('Balatro'),
                 ],
               ),
               const SizedBox(width: 20), // Espaciado entre imágenes
@@ -50,6 +54,7 @@ class PiramideScreen extends StatelessWidget {
                     width: 100,
                     height: 100,
                   ),
+                  const Text('Parkour'),
                 ],
               ),
             ],
@@ -67,6 +72,7 @@ class PiramideScreen extends StatelessWidget {
                     width: 100,
                     height: 100,
                   ),
+                  const Text('Relax'),
                 ],
               ),
               const SizedBox(width: 20), // Espaciado entre imágenes
@@ -77,6 +83,7 @@ class PiramideScreen extends StatelessWidget {
                     width: 100,
                     height: 100,
                   ),
+                  const Text('Sigma'),
                 ],
               ),
               const SizedBox(width: 20), // Espaciado entre imágenes
@@ -87,6 +94,7 @@ class PiramideScreen extends StatelessWidget {
                     width: 100,
                     height: 100,
                   ),
+                  const Text('Phone down'),
                 ],
               ),
             ],

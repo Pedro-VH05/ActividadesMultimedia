@@ -1,3 +1,4 @@
+import 'package:actividad4/screens/menu_lateral.dart';
 import 'package:flutter/material.dart';
 
 class IconosPantalla extends StatelessWidget {
@@ -10,6 +11,7 @@ class IconosPantalla extends StatelessWidget {
         title: const Text('Iconos'),
         backgroundColor: const Color(0xFF76e9ff),
       ),
+      drawer: const MenuLateral(),
       backgroundColor: const Color(0xFFdaffff),
       body: const Center(
         child: Row(

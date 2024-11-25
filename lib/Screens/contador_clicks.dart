@@ -1,3 +1,4 @@
+import 'package:actividad4/screens/menu_lateral.dart';
 import 'package:flutter/material.dart';
 
 class ContadorScreen extends StatefulWidget {
@@ -34,6 +35,7 @@ class _ContadorScreenState extends State<ContadorScreen> {
       appBar: AppBar(
         title: const Text("Contador de Clics"),
       ),
+      drawer: const MenuLateral(),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center, // Centra los widgets en la pantalla
         children: [

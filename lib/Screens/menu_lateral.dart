@@ -57,6 +57,14 @@ class MenuLateral extends StatelessWidget {
             },
           ),
           ListTile(
+            leading: const Icon(Icons.circle_outlined),
+            title: const Text('Desafío'),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.pushNamed(context, AppRoutes.desafio);
+            },
+          ),
+          ListTile(
             leading: const Icon(Icons.functions_rounded),
             title: const Text('Pirámide'),
             onTap: () {

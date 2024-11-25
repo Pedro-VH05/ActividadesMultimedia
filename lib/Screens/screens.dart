@@ -7,3 +7,4 @@ export 'juego_imagenes.dart';
 export 'nombre_pantalla.dart';
 export 'instagram/main_instagram.dart';
 export 'menu_lateral.dart';
+export 'desafio.dart';

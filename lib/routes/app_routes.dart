@@ -6,6 +6,7 @@ class AppRoutes {
   static const String clicks = '/clicks';
   static const String columna = '/columna';
   static const String pantalla = '/pantalla';
+  static const String desafio = '/desafio';
   static const String piramides = '/piramides';
   static const String iconos = '/iconos';
   static const String juego = '/juego';
@@ -18,6 +19,7 @@ class AppRoutes {
     clicks: (context) => const ContadorScreen(),
     columna: (context) => const FotosColumna(),
     pantalla: (context) => const FotosPantalla(),
+    desafio: (context) => const DesafioPantalla(),
     piramides: (context) => const PiramideScreen(),
     iconos: (context) => const IconosPantalla(),
     juego: (context) => const JuegoImagenes(),

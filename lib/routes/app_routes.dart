@@ -13,6 +13,8 @@ class AppRoutes {
   static const String nombre = '/nombre';
   static const String instagram = '/instagram';
   static const String menu = '/menu';
+  static const String sieteymedia = '/sieteymedia';
+  static const String formulario = '/formulario';
 
   // Mapa de rutas
   static final Map<String, WidgetBuilder> routes = {
@@ -26,5 +28,7 @@ class AppRoutes {
     nombre: (context) => const NombrePantalla(),
     instagram: (context) => const InstagramApp(),
     menu: (context) => const MenuLateral(),
+    sieteymedia: (context) => const SieteYMediaScreen(),
+    formulario: (context) => const FormularioAdivinanzaScreen(),
   };
 }

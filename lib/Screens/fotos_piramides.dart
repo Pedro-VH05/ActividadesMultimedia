@@ -21,7 +21,7 @@ class PiramideScreen extends StatelessWidget {
               Column(
                 children: [
                   Image.asset(
-                    'assets/images/john_pork.jpg', // Cambia a tus imágenes
+                    'assets/images/john_pork.jpg',
                     width: 100,
                     height: 100,
                   ),
@@ -39,7 +39,7 @@ class PiramideScreen extends StatelessWidget {
               Column(
                 children: [
                   Image.asset(
-                    'assets/images/balatro.jpg', // Cambia a tus imágenes
+                    'assets/images/balatro.jpg',
                     width: 100,
                     height: 100,
                   ),
@@ -50,7 +50,7 @@ class PiramideScreen extends StatelessWidget {
               Column(
                 children: [
                   Image.asset(
-                    'assets/images/parkour.jpg', // Cambia a tus imágenes
+                    'assets/images/parkour.jpg', 
                     width: 100,
                     height: 100,
                   ),
@@ -68,7 +68,7 @@ class PiramideScreen extends StatelessWidget {
               Column(
                 children: [
                   Image.asset(
-                    'assets/images/relax.jpg', // Cambia a tus imágenes
+                    'assets/images/relax.jpg', 
                     width: 100,
                     height: 100,
                   ),
@@ -79,7 +79,7 @@ class PiramideScreen extends StatelessWidget {
               Column(
                 children: [
                   Image.asset(
-                    'assets/images/tagged_photo3.jpg', // Cambia a tus imágenes
+                    'assets/images/tagged_photo3.jpg',
                     width: 100,
                     height: 100,
                   ),
@@ -90,7 +90,7 @@ class PiramideScreen extends StatelessWidget {
               Column(
                 children: [
                   Image.asset(
-                    'assets/images/tagged_photo6.jpg', // Cambia a tus imágenes
+                    'assets/images/tagged_photo6.jpg',
                     width: 100,
                     height: 100,
                   ),

@@ -96,7 +96,22 @@ class MenuLateral extends StatelessWidget {
               Navigator.pushNamed(context, AppRoutes.instagram);
             },
           ),
-          
+          ListTile(
+            leading: const Icon(Icons.seven_k_plus_rounded),
+            title: const Text('Siete y Media'),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.pushNamed(context, AppRoutes.sieteymedia);
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.text_snippet_outlined),
+            title: const Text('Formulario'),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.pushNamed(context, AppRoutes.formulario);
+            },
+          ),
         ],
       ),
     );

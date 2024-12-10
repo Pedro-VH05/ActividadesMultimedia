@@ -8,3 +8,5 @@ export 'nombre_pantalla.dart';
 export 'instagram/main_instagram.dart';
 export 'menu_lateral.dart';
 export 'desafio.dart';
+export 'siete_y_media.dart';
+export 'formulario.dart';

@@ -20,7 +20,7 @@ class StoriesSection extends StatelessWidget {
           SizedBox(width: 16),
           _StoryWidget(imagePath: 'assets/images/balatro.jpg', label: '🃏'),
           SizedBox(width: 16),
-          _StoryWidget(imagePath: 'assets/images/story3.jpg', label: ''),
+          _StoryWidget(imagePath: 'assets/images/relax.jpg', label: 'Playa'),
           SizedBox(width: 16),
         ],
       ),
